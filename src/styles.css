@@ -16,6 +16,7 @@ body {
     height: 500px;
     max-width: 100%;
 }
+
 header {
     background-color: black;
     color: #fff;
@@ -28,6 +29,7 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 
 .yellow-glow {
     background-color: #f7dc6f;
@@ -56,8 +58,9 @@ header {
 }
 
 .skillselection{
-    margin: 10px;
-    width: 100%; 
+    margin: 5px;
+    width: 100%;
+    height: auto;
     max-width: 100px;
 }
 
@@ -76,6 +79,7 @@ header {
 }
 
 .profile-name {
+    margin-left: 10%;
     font-size: 1.2em, 100%;
     font-weight: bold;
 }
@@ -169,10 +173,6 @@ footer {
     width: 100%;
 }
 
-.opening{
-     font-size: 200px 100%;
-}
-
 h4 {
     text-align: center;
     font-size: auto;
@@ -182,6 +182,32 @@ h4 {
     width: 100%;
     max-width: 500px;
 }
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .1em; /* Adjust as needed */
+  max-width: 300px;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .15s step-end;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+
 @media (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -213,7 +239,7 @@ h4 {
     }
 
     nav ul.active {
-        max-height: 300px; /* Adjust this value based on the number of menu items */
+        max-height: 300px;
         transition: max-height 0.3s ease-in;
     }
 }
