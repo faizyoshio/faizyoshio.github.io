@@ -65,9 +65,10 @@ header {
 }
 
 .experienceselection{
+    padding: auto;
     margin: 10px;
     width: 100%; 
-    max-width: 100px;
+    max-width: 200px;
     min-width: 10px;
 }
 
