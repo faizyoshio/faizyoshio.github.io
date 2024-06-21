@@ -1,5 +1,4 @@
 html{
-    scroll-behavior: smooth;
 }
 
 body {
@@ -173,6 +172,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: 'Minecraft', sans-serif;
 }
 
 h4 {
