@@ -18,6 +18,21 @@ body {
     max-width: 100%;
 }
 
+.APPS{
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+.APPS1{
+    margin: 5px;
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+}
+
+
 header {
     background-color: black;
     color: #fff;
