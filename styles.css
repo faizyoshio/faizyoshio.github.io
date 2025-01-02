@@ -1,4 +1,4 @@
-/* General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +9,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
     display: none;
 }
@@ -27,7 +26,6 @@ body {
     padding: 0 20px;
 }
 
-/* Navigation */
 nav {
     position: fixed;
     width: 95%;
@@ -66,7 +64,6 @@ nav {
     padding: 0 20px;
 }
 
-/* Logo animation */
 .logo {
     display: flex;
     align-items: center;
@@ -97,7 +94,6 @@ nav {
     position: relative;
 }
 
-/* Nav links hover animation */
 .nav-links a {
     color: #fff;
     text-decoration: none;
@@ -134,7 +130,6 @@ nav {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Nav entrance animation */
 @keyframes slideDown {
     from {
         transform: translateY(-100px) translateX(-50%);
@@ -146,7 +141,6 @@ nav {
     }
 }
 
-/* Mobile menu animation */
 @media (max-width: 768px) {
     .nav-links {
         opacity: 0;
@@ -177,7 +171,6 @@ nav {
     .nav-links li:nth-child(5) { transition-delay: 0.5s; }
 }
 
-/* Sections */
 section {
     padding: 100px 0;
     min-height: 100vh;
@@ -188,7 +181,6 @@ h1, h2 {
     margin-bottom: 30px;
 }
 
-/* Portfolio Grid */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -222,22 +214,18 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-/* Footer */
 footer {
     background: #1a1a1a;
     padding: 20px 0;
     text-align: center;
 }
 
-/* Responsive Design */
-/* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
     .container {
         max-width: 1140px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
     .container {
         max-width: 960px;
@@ -248,7 +236,6 @@ footer {
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
     .container {
         max-width: 720px;
@@ -265,7 +252,6 @@ footer {
         padding: 15px;
     }
 
-    /* Hamburger Menu */
     .nav-toggle {
         display: block;
         position: relative;
@@ -288,7 +274,6 @@ footer {
     .nav-toggle span:nth-child(2) { top: 50%; transform: translateY(-50%); }
     .nav-toggle span:nth-child(3) { bottom: 0; }
 
-    /* Hamburger Animation */
     .nav-toggle.active span:nth-child(1) {
         transform: rotate(45deg);
         top: 14px;
@@ -352,7 +337,6 @@ footer {
     }
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     .container {
         max-width: 540px;
@@ -380,7 +364,6 @@ footer {
     }
 }
 
-/* Extra small devices (phones, 375px and down) */
 @media (max-width: 375px) {
     .container {
         padding: 0 10px;
@@ -408,7 +391,6 @@ footer {
     }
 }
 
-/* Height-based media queries */
 @media (max-height: 600px) {
     section {
         padding: 40px 0;
@@ -438,7 +420,6 @@ footer {
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
 }
 
-/* About Section Styling */
 #about h2 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 3em;
@@ -456,7 +437,6 @@ footer {
     color: #ffffff;
 }
 
-/* Responsive adjustment for About section */
 @media (max-width: 768px) {
     #about h2 {
         font-size: 2.5em;
@@ -558,13 +538,11 @@ footer {
     background: #ff3333;
 }
 
-/* For Firefox */
 .slider-container {
     scrollbar-width: thin;
     scrollbar-color: #ff0000 #2a2a2a;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .slider-container {
         padding: 10px;
@@ -612,7 +590,6 @@ footer {
     background: #555;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 1fr;
@@ -716,13 +693,12 @@ footer {
     word-wrap: break-word;
     hyphens: auto;
     line-height: 1.2;
-    min-height: 2.4em; /* Ensures consistent height for two lines of text */
+    min-height: 2.4em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
