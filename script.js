@@ -44,5 +44,11 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinks.classList.remove('active');
         }
     });
+
+    const skillsGrid = document.querySelector('.skills-grid');
+    const skillItems = document.querySelectorAll('.skill-item');
+    const skillCount = skillItems.length;
+    
+    document.documentElement.style.setProperty('--skill-count', skillCount);
 }); 
 
