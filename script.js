@@ -1,11 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
-    
-    navToggle.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
+    const nav = document.querySelector('.nav');
 
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
@@ -50,5 +46,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const skillCount = skillItems.length;
     
     document.documentElement.style.setProperty('--skill-count', skillCount);
+
+    if (navToggle) {
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('nav--visible');
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            nav.classList.remove('nav--visible');
+        }
+    });
 }); 
 
+let lastScroll = 0;
