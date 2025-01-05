@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -448,9 +449,14 @@ html {
 }
 
 .skills-container {
+<<<<<<< HEAD
     width: 100%;
     overflow: hidden;
     position: relative;
+=======
+    margin-top: 3rem;
+    width: 100%;
+>>>>>>> parent of ea19104 (UPDATE NEW)
 }
 
 .skill-items {
@@ -460,6 +466,7 @@ html {
     padding: 15px;
 }
 
+<<<<<<< HEAD
 .skill-items img {
     width: 50px;
     height: 50px;
@@ -486,6 +493,49 @@ html {
 /* Optional: Tambahkan efek hover untuk pause */
 .skills-container:hover .skill-items {
     animation-play-state: paused;
+=======
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    padding: 20px;
+    justify-items: center;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.skill-item span {
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    line-height: 1.2;
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> parent of ea19104 (UPDATE NEW)
 }
 
 .portfolio-image {
