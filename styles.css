@@ -374,6 +374,7 @@ footer {
     transform: translateY(-2px);
 }
 
+<<<<<<< HEAD
 .gradient-overlay {
     position: absolute;
     top: 0;
@@ -381,6 +382,11 @@ footer {
     width: 150px;
     z-index: 2;
     pointer-events: none;
+=======
+.skills-container {
+    margin-top: 3rem;
+    width: 100%;
+>>>>>>> parent of ea19104 (UPDATE NEW)
 }
 
 .gradient-overlay.left {
@@ -392,6 +398,7 @@ footer {
     );
 }
 
+<<<<<<< HEAD
 .gradient-overlay.right {
     right: 0;
     background: linear-gradient(to left, 
@@ -488,6 +495,14 @@ html {
     100% {
         transform: translateX(calc(-50%));
     }
+=======
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    padding: 20px;
+    justify-items: center;
+>>>>>>> parent of ea19104 (UPDATE NEW)
 }
 
 /* Optional: Tambahkan efek hover untuk pause */
@@ -535,6 +550,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
 >>>>>>> parent of ea19104 (UPDATE NEW)
 }
 
@@ -590,6 +606,15 @@ h3 { font-size: 1.5rem; }
 @media screen and (max-width: 480px) {
     html {
         font-size: 12px;
+=======
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 1.5rem;
+        padding: 10px;
+>>>>>>> parent of ea19104 (UPDATE NEW)
     }
     
     .grid {

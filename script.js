@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     const skillsGrid = document.querySelector('.skills-grid');
     const skillItems = document.querySelectorAll('.skill-item');
@@ -59,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function() {
             nav.classList.remove('nav--visible');
         }
     });
+=======
+>>>>>>> parent of ea19104 (UPDATE NEW)
 =======
 >>>>>>> parent of ea19104 (UPDATE NEW)
 }); 
