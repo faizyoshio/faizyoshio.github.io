@@ -3,58 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="470676782_581158424611000_3680885167244664436_n.jpg" />
-    <title>SOON - WEBSITE CODE ERROR :(</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        .error-container {
-            padding: 20px;
-            max-width: 90%;
-        }
-        h1 {
-            font-size: calc(10vw + 20px);
-            margin: 0;
-            background: linear-gradient(45deg, #ff0000, #ff6b6b);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p {
-            font-size: calc(1.5vw + 10px);
-            margin: 20px 0;
-        }
-        .back-btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background: linear-gradient(45deg, #ff0000, #ff6b6b);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: transform 0.3s;
-            font-size: calc(1vw + 10px);
-        }
-        .back-btn:hover {
-            transform: scale(1.05);
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="error-container">
-        <h1>Server Error</h1>
-        <p>Come Back Here Soon</p>
-        <p>Something went wrong on our code. Please come again later.</p>
-        <a href="/" class="back-btn">Back to Home</a>
-    </div>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#login">Login</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="portfolio">
+            <div class="card">
+                <img src="470676782_581158424611000_3680885167244664436_n.jpg" alt="Portfolio Item">
+                <h2>Title</h2>
+                <p>Description of the portfolio item.</p>
+            </div>
+            <!-- More cards can be added here -->
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
